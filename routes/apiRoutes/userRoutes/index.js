@@ -10,10 +10,11 @@ router.route('/')
 	.get(getAllUsers)
 	.post(createUser);
 
-router.post('/login', login)
+
+router.post('/login', login);
 
 router.route('/:userId')
-	.get(getUserById)
+	.get(getUserById);
 // /api/users/:userId
 // router.route('/:userId')
 // 	.delete(deleteUserById)
